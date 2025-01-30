@@ -1,0 +1,21 @@
+async def on_member_join(member):
+    await member.create_dm()
+    await member.dm_channel.send(
+        f'Hi {member.name}, welcome to this server!'
+    )
+
+// private message
+
+from datetime import date
+today = str(date.today())
+print(today)   # '2017-12-26'
+
+stripped_today = today.lstrip("2025-")
+print(stripped_today)
+
+x = 0
+for char in today:
+    x = x + 1
+    print(f' x: {x}, char: {char} \n')
+
+string = str[4:]
